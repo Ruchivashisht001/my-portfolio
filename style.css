@@ -1,0 +1,204 @@
+body {
+  background-color: rgb(28, 28, 60);
+  color: aliceblue;
+  position: relative;
+  height: 100vh;
+  background-image: url(pexels-markusspiske-4439901.jpg);
+}
+
+@font-face {
+  font-family: 'Donaire-Black-Italic';
+  src: url(Donaire-Black-Italic-FFP.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  padding: 10px;
+}
+
+.menu1 {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 15px;
+}
+
+.menu1:hover {
+  background-color: rgb(24, 24, 49);
+  cursor: pointer;
+  font-size: 21px;
+  border-radius: 5px;
+}
+
+h1 {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  font-family: 'Donaire-Black-Italic';
+  font-size: 45px;
+}
+
+img {
+  border: none;
+  position: absolute;
+  bottom: 30%;
+  right: 10%;
+  opacity: 0.7;
+}
+
+.rotate-scale-up {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+}
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+section {
+  padding: 5% 10%;
+}
+
+#service {
+  padding: 250px 100px 50px 100px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+p {
+  font-size: 19px;
+  margin-left: 14px;
+}
+
+.card {
+  background-color: #242448;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 200px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.card1 {
+  background-color: #242448;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 210px;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+#about {
+  padding: 30px 95px 20px 95px;
+}
+
+#projects {
+  padding: 30px 95px 20px 95px;
+}
+
+.pro {
+  background-color: #242448;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 200px;
+}
+
+.pro:hover {
+  transform: scale(1.05);
+
+}
+
+#skills {
+  padding: 30px 95px 20px 95px;
+}
+
+.all-skill {
+  background-color: #242448;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 200px;
+}
+
+.all-skill:hover {
+  transform: scale(1.05);
+}
+
+#contact {
+  padding: 30px 95px 20px 95px;
+}
+
+a {
+  color: aliceblue;
+}
+
+h4 {
+  font-family: 'Donaire-Black-Italic';
+  font-size: 45px;
+  position: absolute;
+  left: 28%;
+  padding: 20px;
+  margin: 20px;
+}
+
+@media(max-width:500px) {
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
