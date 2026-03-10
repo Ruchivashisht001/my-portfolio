@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 window.addEventListener("scroll", function (){
     let nav=document.querySelector("nav");
-    if (window.scrollY>400){
+    if (window.scrollY>200){
         nav.style.background="black";
     } else {
         nav.style.background="transparent";

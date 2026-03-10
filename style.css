@@ -2,7 +2,7 @@ body {
   background-color: rgb(28, 28, 60);
   color: aliceblue;
   position: relative;
-  height: 100vh;
+  height: 200vh;
   background-image: url(pexels-markusspiske-4439901.jpg);
 }
 
@@ -12,7 +12,24 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-
+/* #home{
+  height: 50vh;
+}
+#service{
+  height: 50vh;
+}
+#skills{
+  height: 20px;
+}
+#projects{
+  height: 50vh;
+}
+#about{
+  height: 15vh;
+}
+#contact{
+  height: 15vh;
+} */
 nav {
   position: fixed;
   top: 0%;
@@ -45,8 +62,8 @@ nav {
 
 h1 {
   position: absolute;
-  left: 10%;
-  top: 30%;
+  left: 25%;
+  top: 20%;
   font-family: 'Donaire-Black-Italic';
   font-size: 45px;
 }
@@ -54,7 +71,7 @@ h1 {
 img {
   border: none;
   position: absolute;
-  bottom: 30%;
+  top: 10%;
   right: 10%;
   opacity: 0.7;
 }
@@ -88,7 +105,14 @@ section {
 #service {
   padding: 250px 100px 50px 100px;
 }
-
+/* .service-container,
+.project-conatiner,
+.skill-container{
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+} */
 h2 {
   font-size: 40px;
   margin-bottom: 20px;
@@ -184,10 +208,19 @@ h4 {
   margin: 20px;
 }
 
-@media(max-width:500px) {
+@media(max-width:768px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
   .menu {
     flex-direction: column;
     gap: 20px;
+    right: 10px;
+    top: 10px;
+  }
+  .service-container{
+    margin-top: 200px;
   }
 
   h1 {
